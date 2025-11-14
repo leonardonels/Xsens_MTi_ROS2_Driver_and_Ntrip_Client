@@ -14,7 +14,7 @@ If you are looking for the `ROS1` version, you should go to the [`main`](https:/
 ## How to clone this ROS2 branch
 
 ```
-git clone --branch ros2 https://github.com/xsenssupport/Xsens_MTi_ROS_Driver_and_Ntrip_Client.git
+git clone https://github.com/leonardonels/Xsens_MTi_ROS2_Driver_and_Ntrip_Client
 ```
 
 ## Device Settings - Output Configurations
@@ -194,6 +194,7 @@ If the program displays the message `No MTi device found`:
   sudo apt install cutecom
   cutecom
   ```
+
 
 
 
