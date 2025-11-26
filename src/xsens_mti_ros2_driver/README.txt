@@ -7,6 +7,13 @@ Prerequisites:
     - ROS Humble or Jazzy
     - C/C++ Compiler: GCC 5.4.0
     - C++11
+    - ros-humble-nmea-msgs
+        https://github.com/ros-drivers/nmea_msgs.git
+    - ros-humble-mavros
+        git clone -b release/humble/mavlink/2025.9.9-1 https://github.com/ros2-gbp/mavlink-gbp-release.git mavlink
+        git clone -b 2.12.0 https://github.com/mavlink/mavros.git mavros
+        rosdep install --from-paths src --ignore-src -y ./src/mavros/mavros/scripts/install_geographiclib_datasets.sh
+    - ros-humble-geographic-msgs
 
 Building:
     - Copy xsens_ros2_mti_driver folder and ntrip folder(for MTi-680(G)/MTi-8 only) into your colcon workspace 'src' folder, if you have the RTK GNSS/INS sensor model like MTi-8 or MTi-680/680G, please also copy the ntrip folder.
